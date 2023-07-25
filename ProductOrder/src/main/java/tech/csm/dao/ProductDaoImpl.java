@@ -21,11 +21,12 @@ public class ProductDaoImpl implements ProductDao {
 		seQuery.setParameter(1, pdName);
 		List<ProductDetails> productList = seQuery.list();
 //		Product num = productList.get(2);
-//System.out.println(num);
+//System.out.println(num); sysout
 		if (productList.size() != 0) {
 //			Integer num1 = Array.getInt(productList, 2);
 			System.out.println("football  available");
 			Sales sale = new Sales();
+			System.err.println("ok");
 			Integer pqty = 0;
 			for (ProductDetails d : productList) {
 				sale.setSalesDate(new Date());
